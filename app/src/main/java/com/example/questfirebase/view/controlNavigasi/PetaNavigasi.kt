@@ -1,5 +1,18 @@
 package com.example.questfirebase.view.controlNavigasi
 
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.questfirebase.view.EntrySiswaScreen
+import com.example.questfirebase.view.HomeScreen
+import com.example.questfirebase.view.route.DestinasiDetail
+import com.example.questfirebase.view.route.DestinasiEntry
+import com.example.questfirebase.view.route.DestinasiHome
+
+
 @Composable
 fun DataSiswaApp(navController: NavHostController = rememberNavController(), modifier: Modifier = Modifier) {
     HostNavigasi(navController = navController)
