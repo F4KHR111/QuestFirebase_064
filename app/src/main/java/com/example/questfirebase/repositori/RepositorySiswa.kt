@@ -42,3 +42,7 @@ class FirebaseRepositorySiswa : RepositorySiswa {
         docRef.set(data).await()
     }
 }
+
+override suspend fun getSatuSiswa(id: Long): Siswa? {
+
+}
