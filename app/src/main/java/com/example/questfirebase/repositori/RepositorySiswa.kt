@@ -59,3 +59,7 @@ override suspend fun getSatuSiswa(id: Long): Siswa? {
         null
     }
 }
+
+override suspend fun editSatuSiswa(id: Long, siswa: Siswa) {
+
+}
