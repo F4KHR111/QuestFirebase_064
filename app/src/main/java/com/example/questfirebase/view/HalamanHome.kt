@@ -1,4 +1,5 @@
 package com.example.questfirebase.view
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -98,7 +99,7 @@ fun HomeBody(
             is StatusUiSiswa.Loading -> LoadingScreen()
             is StatusUiSiswa.Success -> DaftarSiswa(
                 itemsSiswa = statusUiSiswa.siswa,
-                onSiswaClick = { it.id.toInt() }
+                onSiswaClick = {onSiswaClick(it.id.toInt())}
             )
             is StatusUiSiswa.Error -> ErrorScreen(
                 retryAction = retryAction,
