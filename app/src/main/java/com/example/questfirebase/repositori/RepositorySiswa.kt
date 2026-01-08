@@ -72,3 +72,7 @@ override suspend fun editSatuSiswa(id: Long, siswa: Siswa) {
         )
     ).await()
 }
+
+override suspend fun hapusSatuSiswa(id: Long) {
+
+}
